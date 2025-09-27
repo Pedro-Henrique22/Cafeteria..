@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flaxbox aprendendo</title>
+
+<style>
+
+.wrapper{
+    margin: auto; /*caixa proncipal que recebe as caixas box*/
+    display: flex; /*para transformar em bloco */
+    flex-direction: row;/*direção das caixas , temos a opcao de usar colunas*/
+    flex-wrap: wrap;/*quando utilizamos blocos eles ficam um do lado do outro */
+    justify-content: center; /*alinhando blocos */
+    align-items: center; /*alinhando blocos verticais */
+    width: 90%; /*largura principal*/
+    height: auto;
+    background-color: rgb(241, 241, 241);
+    padding: 0px; /*espaço entre as caixas e o principal */
+
+}
+
+.boxLogo{
+    background-color: rgb(209, 209, 209);
+    width: 10%;
+    height: 100px;
+    margin: 0px; /*margem ao redor da caixa para elas ficar distante */
+    
+}
+.logo{
+    width: 100%;
+    height:100%;
+}
+
+.boxMenu{
+    background-color: rgb(253, 253, 253);
+    width: 90%;
+    height: 100px;
+    margin: 0px; /*margem ao redor da caixa para elas ficar distante */
+    
+}
+
+
+
+.boxCard1{
+    background-color: rgb(252, 252, 252);
+    width: 20%;
+    height: 300px;
+    margin: 8px; /*margem ao redor da caixa para elas ficar distante */
+    border-radius: 10px;
+    border-style: groove;
+    border-width: 3px;
+    border-color: #131212;
+    padding: 1%;
+}
+
+.card1{
+    width:100%;
+    height: 200px;
+}
+
+
+
+.boxRodape{
+    background-color: rgb(53, 131, 145);
+    width: 100%;
+    height: 100px;
+    margin: 0px; /*margem ao redor da caixa para elas ficar distante */
+    clear: both;
+    text-align: center;
+    
+
+}
+
+nav{
+        padding-right: 2%; /*para não ficar colado na margem do lado direito*/
+        width: 98%; 
+        height: 50px;
+        background-color: #3c1c00;
+        }
+
+        nav ul{  /*RETIREI O TRAÇO ABAIXO DO LINK*/
+
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            float: right;/* O TEXTO FICARÁ DO LADO RIGHT/LEFT - DIREITO OU ESQUERDO*/
+        } 
+
+
+        nav ul li{ /*ORDEM DE APARIÇÃO DOS BOTÕES*/
+
+            float: left;
+        }
+
+        nav ul li a{
+            color: #ffffffb0;
+            text-decoration: none; /*none desativa o css */
+            padding: 15px; /*espaçamento*/
+            display: block; /*transformar em blocos*/
+        }
+
+        nav ul li a:hover{ /*evento mouse em cima do link*/
+            background-color: #967420;
+            transition: all .5s; /*efeito de transição*/
+            border-radius: 15px;
+        }
+ 
+        .ZOOM{ transition: transform 0,3s ease;
+        }
+
+        .ZOOM:hover{transform: scale(1.2);}
+        
+        
+
+</style>
+
+</head>
+<body>
+
+
+
+    <div class="wrapper">
+
+    <div class="boxLogo">
+        <img class="logo" src="coroa logo png.png" alt="coroa">
+    </div>
+
+ <div class="boxMenu">
+        <a href="flaxbox.html">O IMPERIAL</a>
+        <a href="cardapio.html">CARDÁPIO</a>   
+        <a href="contato.html">CONTATO</a> 
+    </div>
+
+     <div class="boxCard1 ZOOM">
+        <img class="card1" src="fotos/crossaint.jpg" alt="">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam non deserunt consequuntur doloremque, aut asperiores laborum hic. Earum eaque perspiciatis corrupti. Perferendis ipsum amet quis repellat. Eos delectus eius quidem!
+
+    </div>
+
+
+     <div class="boxCard1 ZOOM">
+        <img class="card1 ZOOM" src="fotos/torta de limão.jpg" alt="">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ipsum hic accusantium delectus, enim fugit inventore repudiandae consectetur odit, sapiente perspiciatis eum voluptatem modi ratione perferendis sed maiores ipsa fugiat?
+
+    </div>
+
+     <div class="boxCard1 ZOOM " >
+        <img class="card1 ZOOM" src="fotos/crossaint.jpg" alt="">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quibusdam facere quod illo ipsam pariatur obcaecati inventore blanditiis. Possimus quibusdam officia fuga doloremque deserunt aperiam commodi voluptates reprehenderit quam sit?
+
+    </div>
+     <div class="boxCard1 ZOOM">
+        <img class="card1" src="fotos/sucos.jpg" alt="">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam non deserunt consequuntur doloremque, aut asperiores laborum hic. Earum eaque perspiciatis corrupti. Perferendis ipsum amet quis repellat. Eos delectus eius quidem!
+
+    </div>
+
+
+     <div class="boxCard1 ZOOM">
+        <img class="card1" src="fotos/crossaint.jpg" alt="">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ipsum hic accusantium delectus, enim fugit inventore repudiandae consectetur odit, sapiente perspiciatis eum voluptatem modi ratione perferendis sed maiores ipsa fugiat?
+
+    </div>
+
+     <div class="boxCard1 ZOOM">
+        <img class="card1" src="fotos/sucos.jpg" alt="">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quibusdam facere quod illo ipsam pariatur obcaecati inventore blanditiis. Possimus quibusdam officia fuga doloremque deserunt aperiam commodi voluptates reprehenderit quam sit?
+
+    </div>
+
+    <div class="boxCard1 ZOOM">
+        <img class="card1" src="fotos/torta de limão.jpg" alt="">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam non deserunt consequuntur doloremque, aut asperiores laborum hic. Earum eaque perspiciatis corrupti. Perferendis ipsum amet quis repellat. Eos delectus eius quidem!
+
+    </div>
+
+
+     <div class="boxCard1 ZOOM">
+        <img class="card1" src="fotos/sucos.jpg" alt="">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ipsum hic accusantium delectus, enim fugit inventore repudiandae consectetur odit, sapiente perspiciatis eum voluptatem modi ratione perferendis sed maiores ipsa fugiat?
+
+    </div>
+
+     <div class="boxCard1 ZOOM">
+        <img class="card1" src="sucos.jpg" alt="">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quibusdam facere quod illo ipsam pariatur obcaecati inventore blanditiis. Possimus quibusdam officia fuga doloremque deserunt aperiam commodi voluptates reprehenderit quam sit?
+
+    </div>
+
+    <div class="boxCard1 ZOOM">
+        <img class="card1" src="crossaint.jpg" alt="">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam non deserunt consequuntur doloremque, aut asperiores laborum hic. Earum eaque perspiciatis corrupti. Perferendis ipsum amet quis repellat. Eos delectus eius quidem!
+
+    </div>
+
+
+     <div class="boxCard1 ZOOM">
+        <img class="card1" src="fotos/torta de limão.jpg" alt="">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ipsum hic accusantium delectus, enim fugit inventore repudiandae consectetur odit, sapiente perspiciatis eum voluptatem modi ratione perferendis sed maiores ipsa fugiat?
+
+    </div>
+
+     <div class="boxCard1 ZOOM">
+        <img class="card1" src="fotos/crossaint.jpg" alt="">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quibusdam facere quod illo ipsam pariatur obcaecati inventore blanditiis. Possimus quibusdam officia fuga doloremque deserunt aperiam commodi voluptates reprehenderit quam sit?
+
+    </div>
+
+
+
+    </div>
+
+    <div class="boxRodape">
+        Todos os direitos reservados 2024
+    </div>
+
+
+
+
+
+
+
+
+    </div>
+
+    
+</body>
+</html>
